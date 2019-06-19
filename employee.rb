@@ -35,12 +35,20 @@ employee1 = {
  p "#{employee1["first_name"]} #{employee1["last_name"]} $#{employee1["salary"]} per year."  
 
 
+#  employee2 = {
+#   :first_name => "Danilo",
+#   :last_name => "campos",
+#   :salary => 100000,
+#   :active => false 
+# }
+
  employee2 = {
-  :first_name => "Danilo",
-  :last_name => "campos",
-  :salary => 100000,
-  :active => false 
+  first_name: "Danilo",
+  last_name: "campos",
+  salary: 100000,
+  active: false 
 }
+
  p "#{employee2[:first_name]} #{employee2[:last_name]} $#{employee2[:salary]} per year."  
 
  #instead of keys being strings they will be symbols 
