@@ -5,7 +5,7 @@
 
 
 #Array 
-# employee1 = ["Majora" ,"Carter" , 80000 , true]
+# employee2 = ["Majora" ,"Carter" , 80000 , true]
 # p employee1[0] + " " + employee1[1] + " " + "makes $" + employee1[2].to_s + " per year."
 # # line 9 is concatentation this is adding a bunch of strings together 
 
@@ -33,4 +33,16 @@ employee1 = {
   } 
 
  p "#{employee1["first_name"]} #{employee1["last_name"]} $#{employee1["salary"]} per year."  
+
+
+ employee2 = {
+  :first_name => "Danilo",
+  :last_name => "campos",
+  :salary => 100000,
+  :active => false 
+}
+ p "#{employee2[:first_name]} #{employee2[:last_name]} $#{employee2[:salary]} per year."  
+
+ #instead of keys being strings they will be symbols 
+
 #array 
