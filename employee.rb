@@ -56,6 +56,8 @@
 #array 
 
 # class 
+
+
 class Employee  
   def initialize(input_first_name, input_last_name,input_salary,input_active)
     @first_name = input_first_name
@@ -64,17 +66,48 @@ class Employee
     @active = input_active
     
       end
+  def first_name
+     @first_name
+  end
+
+def first_name=(input_first_name)
+  @first_name = input_first_name
+end
+
       def print_info #this is a method don't forget to end the method 
         p "#{@first_name} #{@last_name} makes $#{@salary}"
         #@ makes it an instance variable 
-      end  
+      end 
+
+
+
+
+      def give_annual_raise
+      @salary = @salary * 1.05
+      end 
+
 end 
 
+
+
+
 employee1 = Employee.new("Majora", "Carter" , 80000, true) 
-employee1.print_info
+# employee1.print_info
 
 employee2 = Employee.new("Danilo", "Campos" , 100000, false) 
-employee2.print_info
+# p "infomation before the raise"
+# employee2.print_info
 
+# employee2.give_annual_raise
+# p "information after the raise"
+# employee2.print_info
+
+p employee2.first_name
+employee2.first_name= "Bob" #changing the name 
+p employee2.first_name #need to call to rechange the name 
 
 #class is like a factory the instances are what made by the factory 
+#pro&cons with a class employee having access to methods is you write it once all you have to do is call .print_info 
+# a lot of control on what can get called on employee 1 
+
+
